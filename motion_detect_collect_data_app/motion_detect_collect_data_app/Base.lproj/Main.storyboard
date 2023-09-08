@@ -58,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="dirTextField" destination="9ZX-za-nva" id="duo-9K-KWT"/>
+                        <outlet property="durationText" destination="Jha-IL-dXm" id="S2G-hu-0Sa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

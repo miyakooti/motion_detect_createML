@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C1084C4FAF44B9DCDE81FD6F /* Pods_motion_detect_collect_data_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEC0740418076039B307FB7 /* Pods_motion_detect_collect_data_app.framework */; };
-		C25E1A942AAB03E2008CEBFC /* HeadphoneMotionClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A932AAB03E2008CEBFC /* HeadphoneMotionClassifier.swift */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
 		C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		0970AE73110E333EA2A84028 /* Pods-motion_detect_collect_data_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motion_detect_collect_data_app.debug.xcconfig"; path = "Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app.debug.xcconfig"; sourceTree = "<group>"; };
-		C25E1A932AAB03E2008CEBFC /* HeadphoneMotionClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneMotionClassifier.swift; sourceTree = "<group>"; };
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 			children = (
 				C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */,
 				C2E671E32AAAF36300AAA7E9 /* Haptics.swift */,
-				C25E1A932AAB03E2008CEBFC /* HeadphoneMotionClassifier.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -230,7 +227,6 @@
 				C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */,
 				C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */,
 				C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */,
-				C25E1A942AAB03E2008CEBFC /* HeadphoneMotionClassifier.swift in Sources */,
 				C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */,
 				C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */,
 			);
@@ -383,7 +379,7 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "予測";
+				INFOPLIST_KEY_CFBundleDisplayName = "データ収集";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -414,7 +410,7 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "予測";
+				INFOPLIST_KEY_CFBundleDisplayName = "データ収集";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

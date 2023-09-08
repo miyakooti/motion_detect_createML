@@ -12,6 +12,7 @@
 		C25E1A9A2AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A992AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage */; };
 		C25E1A9C2AAB0D02008CEBFC /* motionClassifier 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A9B2AAB0D02008CEBFC /* motionClassifier 2.mlmodel */; };
 		C25E1AA02AAB4D4B008CEBFC /* motionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A9F2AAB4D4B008CEBFC /* motionClassifier.mlmodel */; };
+		C25E1AA22AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AA12AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
 		C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		C25E1A992AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = "MotionClassifier Iteration 10.mlpackage"; path = "../../../ML_workspace/MotionClassifier Iteration 10.mlpackage"; sourceTree = "<group>"; };
 		C25E1A9B2AAB0D02008CEBFC /* motionClassifier 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "motionClassifier 2.mlmodel"; path = "../../../ML_workspace/motionClassifier 2.mlmodel"; sourceTree = "<group>"; };
 		C25E1A9F2AAB4D4B008CEBFC /* motionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = motionClassifier.mlmodel; path = ../../../py/motionClassifier.mlmodel; sourceTree = "<group>"; };
+		C25E1AA12AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisIsMLModelSandboxApp.swift; sourceTree = "<group>"; };
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */,
+				C25E1AA12AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift */,
 				C2E671DF2AAAEE9200AAA7E9 /* Utilities */,
 				C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */,
 				C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */,
@@ -242,6 +245,7 @@
 				C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */,
 				C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */,
 				C25E1A962AAB0436008CEBFC /* HeadphoneMotionClassifier.swift in Sources */,
+				C25E1AA22AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift in Sources */,
 				C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */,
 				C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */,
 				C25E1A9C2AAB0D02008CEBFC /* motionClassifier 2.mlmodel in Sources */,
@@ -395,7 +399,7 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "データ収集";
+				INFOPLIST_KEY_CFBundleDisplayName = "予測";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -426,7 +430,7 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "データ収集";
+				INFOPLIST_KEY_CFBundleDisplayName = "予測";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

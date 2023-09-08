@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var writer: MotionWriter?
     var begin: Date?
     @IBOutlet weak var dirTextField: UITextField!
+    @IBOutlet weak var durationText: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +36,16 @@ class ViewController: UIViewController {
                 if let writer = self.writer {
                     writer.write(data)
 
-                    // You can add logic here to stop recording after a certain duration
                     print(accelerometerData)
+                    
+                    let duration = Int(self.durationText.text!)!
+                    if duration > 0 {
+                        let now = Date()
+                        if now.timeIntervalSince(self.begin!) > Double(duration) {
+                            self.stopRecording()
+                            self.startRecording()
+                        }
+                    }
                 }
             }
             if let error = error {
@@ -85,8 +95,7 @@ class ViewController: UIViewController {
         if let writer = self.writer {
             writer.close()
             print("記録完了")
-            HapticFeedbackManager.shared.play(.impact(.heavy))
-            HapticFeedbackManager.shared.play(.impact(.heavy))
+            HapticFeedbackManager.shared.play(.impact(.light))
             self.writer = nil
         }
     }
