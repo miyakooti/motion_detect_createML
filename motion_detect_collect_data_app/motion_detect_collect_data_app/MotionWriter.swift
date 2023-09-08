@@ -1,9 +1,10 @@
 //
 //  MotionWriter.swift
-//  CMHeadphoneMotionManager-Sampler
+//  motion_detect_collect_data_app
 //
-//  Created by yorifuji on 2020/10/03.
+//  Created by arai kousuke on 2023/09/08.
 //
+
 import Foundation
 import CoreMotion
 
@@ -14,9 +15,6 @@ class MotionWriter {
 
     func open(_ filePath: URL) {
         do {
-            
-            
-            
             
             FileManager.default.createFile(atPath: filePath.path, contents: nil, attributes: nil)
             let file = try FileHandle(forWritingTo: filePath)
