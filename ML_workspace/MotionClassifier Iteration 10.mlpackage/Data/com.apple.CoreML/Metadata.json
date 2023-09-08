@@ -1,0 +1,16 @@
+{
+  "MLModelCreatorDefinedKey" : {
+    "target" : "label",
+    "com.apple.coreml.model.preview.type" : "activityClassifier",
+    "com.apple.createml.version" : "13.4.0",
+    "max_iterations" : "10",
+    "session_id" : "session_id",
+    "com.apple.createml.app.tag" : "115.3",
+    "version" : "2",
+    "type" : "activity_classifier",
+    "features" : "acceleration_x,acceleration_y,acceleration_z",
+    "com.apple.createml.app.version" : "5.0 Beta",
+    "prediction_window" : "100"
+  },
+  "MLModelAuthorKey" : "arai kousuke"
+}

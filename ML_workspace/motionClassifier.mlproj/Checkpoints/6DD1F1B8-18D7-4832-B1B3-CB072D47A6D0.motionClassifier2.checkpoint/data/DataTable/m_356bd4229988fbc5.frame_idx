@@ -1,0 +1,17 @@
+[sframe]
+version=0
+num_segments=0
+num_columns=5
+nrows=17316
+[column_names]
+0000=acceleration_x
+0001=acceleration_z
+0002=acceleration_y
+0003=session_id
+0004=label
+[column_files]
+0000=m_356bd4229988fbc5.sidx:0
+0001=m_356bd4229988fbc5.sidx:1
+0002=m_356bd4229988fbc5.sidx:2
+0003=m_356bd4229988fbc5.sidx:3
+0004=m_356bd4229988fbc5.sidx:4

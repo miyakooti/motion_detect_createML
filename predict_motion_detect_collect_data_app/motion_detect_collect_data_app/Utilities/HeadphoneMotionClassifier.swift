@@ -20,7 +20,7 @@ class HeadphoneMotionClassifier {
     weak var delegate: HeadphoneMotionClassifierDelegate?
 
     static let configuration = MLModelConfiguration()
-    let model = try! MotionClassifier_Iteration_10(configuration: configuration)
+    let model = try! motionClassifier_2(configuration: configuration)
 
     static let predictionWindowSize = 100
     let acceleration_x = try! MLMultiArray(
@@ -57,15 +57,17 @@ class HeadphoneMotionClassifier {
             }
         }
     }
+    
+    
 
     var stateOut: MLMultiArray? = nil
 
     private func predict() {
 
-        let input = MotionClassifier_Iteration_10Input(
+        let input = motionClassifier_2Input(
             acceleration_x: acceleration_x,
             acceleration_y: acceleration_y,
-            acceleration_z: acceleration_z, stateIn: self.stateOut!)
+            acceleration_z: acceleration_z, stateIn: MLMultiArray)
 
 
 //            stateIn: self.stateOut
