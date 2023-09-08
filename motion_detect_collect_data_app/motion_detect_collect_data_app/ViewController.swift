@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     let motionManager = CMMotionManager()
     var writer: MotionWriter?
     var begin: Date?
-
+    @IBOutlet weak var dirTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
         }
 
         // Configure the motion update interval
-        motionManager.accelerometerUpdateInterval = 0.1  // Update interval in seconds
+        motionManager.accelerometerUpdateInterval = AppParameters.samplingRate
 
         // Start accelerometer updates
         motionManager.startAccelerometerUpdates(to: .main) { (accelerometerData, error) in
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func startRecording(_ sender: Any) {
+    @IBAction func tapButton(_ sender: Any) {
         if self.writer == nil {
             startRecording()
         } else {
@@ -52,8 +53,8 @@ class ViewController: UIViewController {
     }
 
     func startRecording() {
-        
-        
+        HapticFeedbackManager.shared.play(.impact(.heavy))
+
 //         Create a directory in the app's document directory
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
 //        let dirName = "AccelerometerData"
@@ -73,25 +74,8 @@ class ViewController: UIViewController {
         let filename = formatter.string(from: Date()) + ".csv"
         let fileURL = dirURL.appendingPathComponent(filename)
         
-//        let fileManager = FileManager.default
-//        let docPath =  NSHomeDirectory() + "/Documents"
-//        let filePath = docPath + "/sample.csv"
-//
-
-        
-//        if !fileManager.fileExists(atPath: filePath) {
-//            print("ファイルはまだありません")
-////            fileManager.createFile(atPath:filePath, contents: data, attributes: [:])
-//        }else{
-//            print("既に存在します。")
-//        }
-//
-//        guard let filePath = URL(string: filePath) else { return }
-
-
         // Initialize the writer
         writer = MotionWriter()
-        print(fileURL)
         writer?.open(fileURL)
         begin = Date()
     }
@@ -99,6 +83,9 @@ class ViewController: UIViewController {
     func stopRecording() {
         if let writer = self.writer {
             writer.close()
+            print("記録完了")
+            HapticFeedbackManager.shared.play(.impact(.heavy))
+            HapticFeedbackManager.shared.play(.impact(.heavy))
             self.writer = nil
         }
     }

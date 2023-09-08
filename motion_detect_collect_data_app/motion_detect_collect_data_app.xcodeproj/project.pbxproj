@@ -14,6 +14,8 @@
 		C2E671B22AAAB41100AAA7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E671B12AAAB41100AAA7E9 /* Assets.xcassets */; };
 		C2E671B52AAAB41100AAA7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E671B32AAAB41100AAA7E9 /* LaunchScreen.storyboard */; };
 		C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671DD2AAAEB8B00AAA7E9 /* MotionWriter.swift */; };
+		C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */; };
+		C2E671E42AAAF36300AAA7E9 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671E32AAAF36300AAA7E9 /* Haptics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C2E671B42AAAB41100AAA7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2E671B62AAAB41100AAA7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E671DD2AAAEB8B00AAA7E9 /* MotionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionWriter.swift; sourceTree = "<group>"; };
+		C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
+		C2E671E32AAAF36300AAA7E9 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */,
+				C2E671DF2AAAEE9200AAA7E9 /* Utilities */,
 				C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */,
 				C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */,
 				C2E671AE2AAAB40F00AAA7E9 /* Main.storyboard */,
@@ -68,6 +73,15 @@
 				C2E671B62AAAB41100AAA7E9 /* Info.plist */,
 			);
 			path = motion_detect_collect_data_app;
+			sourceTree = "<group>";
+		};
+		C2E671DF2AAAEE9200AAA7E9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */,
+				C2E671E32AAAF36300AAA7E9 /* Haptics.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E671E42AAAF36300AAA7E9 /* Haptics.swift in Sources */,
+				C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */,
 				C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */,
 				C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */,
 				C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */,

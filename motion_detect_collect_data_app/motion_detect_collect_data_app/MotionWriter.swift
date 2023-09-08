@@ -40,7 +40,6 @@ class MotionWriter {
         text += "\(accelerationData.timestamp)"
         text += "\n"
         file.write(text.data(using: .utf8)!)
-        print("書き込みしました")
         sample += 1
     }
 
@@ -48,6 +47,7 @@ class MotionWriter {
         guard let file = self.file else { return }
         file.closeFile()
         print("\(sample) sample")
+        print()
         self.file = nil
     }
 }
