@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1084C4FAF44B9DCDE81FD6F /* Pods_motion_detect_collect_data_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEC0740418076039B307FB7 /* Pods_motion_detect_collect_data_app.framework */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
 		C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0970AE73110E333EA2A84028 /* Pods-motion_detect_collect_data_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motion_detect_collect_data_app.debug.xcconfig"; path = "Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		C2E671DD2AAAEB8B00AAA7E9 /* MotionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionWriter.swift; sourceTree = "<group>"; };
 		C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
 		C2E671E32AAAF36300AAA7E9 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		EA52E6E9121EBA8B430C529E /* Pods-motion_detect_collect_data_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motion_detect_collect_data_app.release.xcconfig"; path = "Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app.release.xcconfig"; sourceTree = "<group>"; };
+		EFEC0740418076039B307FB7 /* Pods_motion_detect_collect_data_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_motion_detect_collect_data_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1084C4FAF44B9DCDE81FD6F /* Pods_motion_detect_collect_data_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9559DD40B9FD90854BEEE532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0970AE73110E333EA2A84028 /* Pods-motion_detect_collect_data_app.debug.xcconfig */,
+				EA52E6E9121EBA8B430C529E /* Pods-motion_detect_collect_data_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C2E6719C2AAAB40F00AAA7E9 = {
 			isa = PBXGroup;
 			children = (
 				C2E671A72AAAB40F00AAA7E9 /* motion_detect_collect_data_app */,
 				C2E671A62AAAB40F00AAA7E9 /* Products */,
+				9559DD40B9FD90854BEEE532 /* Pods */,
+				F8C69D29BE9E43E7F0BA2576 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +100,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		F8C69D29BE9E43E7F0BA2576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFEC0740418076039B307FB7 /* Pods_motion_detect_collect_data_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2E671B92AAAB41100AAA7E9 /* Build configuration list for PBXNativeTarget "motion_detect_collect_data_app" */;
 			buildPhases = (
+				D2CE6C4FEE6AFA347930496A /* [CP] Check Pods Manifest.lock */,
 				C2E671A12AAAB40F00AAA7E9 /* Sources */,
 				C2E671A22AAAB40F00AAA7E9 /* Frameworks */,
 				C2E671A32AAAB40F00AAA7E9 /* Resources */,
+				592E050B17C42E4A661E3FF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,7 +146,7 @@
 				};
 			};
 			buildConfigurationList = C2E671A02AAAB40F00AAA7E9 /* Build configuration list for PBXProject "motion_detect_collect_data_app" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -149,6 +175,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		592E050B17C42E4A661E3FF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2CE6C4FEE6AFA347930496A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-motion_detect_collect_data_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2E671A12AAAB40F00AAA7E9 /* Sources */ = {
@@ -302,6 +370,7 @@
 		};
 		C2E671BA2AAAB41100AAA7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0970AE73110E333EA2A84028 /* Pods-motion_detect_collect_data_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +379,7 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "データ収集";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -331,6 +401,7 @@
 		};
 		C2E671BB2AAAB41100AAA7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA52E6E9121EBA8B430C529E /* Pods-motion_detect_collect_data_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +410,7 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "データ収集";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

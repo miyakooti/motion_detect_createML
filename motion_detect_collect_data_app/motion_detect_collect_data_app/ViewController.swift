@@ -54,11 +54,12 @@ class ViewController: UIViewController {
 
     func startRecording() {
         HapticFeedbackManager.shared.play(.impact(.heavy))
+        
+        guard let dirName = dirTextField.text else {return}
 
 //         Create a directory in the app's document directory
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
 //        let dirName = "AccelerometerData"
-        let dirName = "motion"
         let dirURL = documentDirectory.appendingPathComponent(dirName, isDirectory: true)
 
         do {
