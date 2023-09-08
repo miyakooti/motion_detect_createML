@@ -11,6 +11,7 @@
 		C25E1A962AAB0436008CEBFC /* HeadphoneMotionClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A952AAB0436008CEBFC /* HeadphoneMotionClassifier.swift */; };
 		C25E1A9A2AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A992AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage */; };
 		C25E1A9C2AAB0D02008CEBFC /* motionClassifier 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A9B2AAB0D02008CEBFC /* motionClassifier 2.mlmodel */; };
+		C25E1AA02AAB4D4B008CEBFC /* motionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A9F2AAB4D4B008CEBFC /* motionClassifier.mlmodel */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
 		C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		C25E1A952AAB0436008CEBFC /* HeadphoneMotionClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneMotionClassifier.swift; sourceTree = "<group>"; };
 		C25E1A992AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = "MotionClassifier Iteration 10.mlpackage"; path = "../../../ML_workspace/MotionClassifier Iteration 10.mlpackage"; sourceTree = "<group>"; };
 		C25E1A9B2AAB0D02008CEBFC /* motionClassifier 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "motionClassifier 2.mlmodel"; path = "../../../ML_workspace/motionClassifier 2.mlmodel"; sourceTree = "<group>"; };
+		C25E1A9F2AAB4D4B008CEBFC /* motionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = motionClassifier.mlmodel; path = ../../../py/motionClassifier.mlmodel; sourceTree = "<group>"; };
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */,
 				C2E671E32AAAF36300AAA7E9 /* Haptics.swift */,
 				C25E1A9B2AAB0D02008CEBFC /* motionClassifier 2.mlmodel */,
+				C25E1A9F2AAB4D4B008CEBFC /* motionClassifier.mlmodel */,
 				C25E1A992AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage */,
 				C25E1A952AAB0436008CEBFC /* HeadphoneMotionClassifier.swift */,
 			);
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C25E1A9A2AAB07E2008CEBFC /* MotionClassifier Iteration 10.mlpackage in Sources */,
+				C25E1AA02AAB4D4B008CEBFC /* motionClassifier.mlmodel in Sources */,
 				C2E671E42AAAF36300AAA7E9 /* Haptics.swift in Sources */,
 				C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */,
 				C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */,
