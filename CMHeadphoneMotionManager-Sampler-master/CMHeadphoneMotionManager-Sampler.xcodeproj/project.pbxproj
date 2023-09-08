@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3460F6D25280282009E5EA3 /* MotionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3460F6C25280282009E5EA3 /* MotionWriter.swift */; };
+		E3D6DDDB25222BE900EA466B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6DDDA25222BE900EA466B /* AppDelegate.swift */; };
+		E3D6DDDD25222BE900EA466B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6DDDC25222BE900EA466B /* SceneDelegate.swift */; };
+		E3D6DDDF25222BE900EA466B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6DDDE25222BE900EA466B /* ViewController.swift */; };
+		E3D6DDE225222BE900EA466B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D6DDE025222BE900EA466B /* Main.storyboard */; };
+		E3D6DDE425222BEA00EA466B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D6DDE325222BEA00EA466B /* Assets.xcassets */; };
+		E3D6DDE725222BEA00EA466B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D6DDE525222BEA00EA466B /* LaunchScreen.storyboard */; };
+		E3D6DDF225222BEA00EA466B /* CMHeadphoneMotionManager_SamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6DDF125222BEA00EA466B /* CMHeadphoneMotionManager_SamplerTests.swift */; };
+		E3D6DDFD25222BEA00EA466B /* CMHeadphoneMotionManager_SamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6DDFC25222BEA00EA466B /* CMHeadphoneMotionManager_SamplerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3D6DDEE25222BEA00EA466B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3D6DDCF25222BE900EA466B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D6DDD625222BE900EA466B;
+			remoteInfo = "CMHeadphoneMotionManager-Sampler";
+		};
+		E3D6DDF925222BEA00EA466B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3D6DDCF25222BE900EA466B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D6DDD625222BE900EA466B;
+			remoteInfo = "CMHeadphoneMotionManager-Sampler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3460F6C25280282009E5EA3 /* MotionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionWriter.swift; sourceTree = "<group>"; };
+		E3D6DDD725222BE900EA466B /* CMHeadphoneMotionManager-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CMHeadphoneMotionManager-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D6DDDA25222BE900EA466B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3D6DDDC25222BE900EA466B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3D6DDDE25222BE900EA466B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3D6DDE125222BE900EA466B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3D6DDE325222BEA00EA466B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3D6DDE625222BEA00EA466B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3D6DDE825222BEA00EA466B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D6DDED25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CMHeadphoneMotionManager-SamplerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D6DDF125222BEA00EA466B /* CMHeadphoneMotionManager_SamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMHeadphoneMotionManager_SamplerTests.swift; sourceTree = "<group>"; };
+		E3D6DDF325222BEA00EA466B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D6DDF825222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CMHeadphoneMotionManager-SamplerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D6DDFC25222BEA00EA466B /* CMHeadphoneMotionManager_SamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMHeadphoneMotionManager_SamplerUITests.swift; sourceTree = "<group>"; };
+		E3D6DDFE25222BEA00EA466B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3D6DDD425222BE900EA466B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D6DDEA25222BEA00EA466B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D6DDF525222BEA00EA466B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2E671BC2AAAC25700AAA7E9 /* motion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = motion;
+			sourceTree = "<group>";
+		};
+		E3D6DDCE25222BE900EA466B = {
+			isa = PBXGroup;
+			children = (
+				E3D6DDD925222BE900EA466B /* CMHeadphoneMotionManager-Sampler */,
+				E3D6DDF025222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests */,
+				E3D6DDFB25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests */,
+				E3D6DDD825222BE900EA466B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3D6DDD825222BE900EA466B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3D6DDD725222BE900EA466B /* CMHeadphoneMotionManager-Sampler.app */,
+				E3D6DDED25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests.xctest */,
+				E3D6DDF825222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3D6DDD925222BE900EA466B /* CMHeadphoneMotionManager-Sampler */ = {
+			isa = PBXGroup;
+			children = (
+				E3D6DDDA25222BE900EA466B /* AppDelegate.swift */,
+				E3D6DDDC25222BE900EA466B /* SceneDelegate.swift */,
+				C2E671BC2AAAC25700AAA7E9 /* motion */,
+				E3D6DDDE25222BE900EA466B /* ViewController.swift */,
+				E3D6DDE025222BE900EA466B /* Main.storyboard */,
+				E3D6DDE325222BEA00EA466B /* Assets.xcassets */,
+				E3D6DDE525222BEA00EA466B /* LaunchScreen.storyboard */,
+				E3D6DDE825222BEA00EA466B /* Info.plist */,
+				E3460F6C25280282009E5EA3 /* MotionWriter.swift */,
+			);
+			path = "CMHeadphoneMotionManager-Sampler";
+			sourceTree = "<group>";
+		};
+		E3D6DDF025222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3D6DDF125222BEA00EA466B /* CMHeadphoneMotionManager_SamplerTests.swift */,
+				E3D6DDF325222BEA00EA466B /* Info.plist */,
+			);
+			path = "CMHeadphoneMotionManager-SamplerTests";
+			sourceTree = "<group>";
+		};
+		E3D6DDFB25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3D6DDFC25222BEA00EA466B /* CMHeadphoneMotionManager_SamplerUITests.swift */,
+				E3D6DDFE25222BEA00EA466B /* Info.plist */,
+			);
+			path = "CMHeadphoneMotionManager-SamplerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3D6DDD625222BE900EA466B /* CMHeadphoneMotionManager-Sampler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D6DE0125222BEA00EA466B /* Build configuration list for PBXNativeTarget "CMHeadphoneMotionManager-Sampler" */;
+			buildPhases = (
+				E3D6DDD325222BE900EA466B /* Sources */,
+				E3D6DDD425222BE900EA466B /* Frameworks */,
+				E3D6DDD525222BE900EA466B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CMHeadphoneMotionManager-Sampler";
+			productName = "CMHeadphoneMotionManager-Sampler";
+			productReference = E3D6DDD725222BE900EA466B /* CMHeadphoneMotionManager-Sampler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3D6DDEC25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D6DE0425222BEA00EA466B /* Build configuration list for PBXNativeTarget "CMHeadphoneMotionManager-SamplerTests" */;
+			buildPhases = (
+				E3D6DDE925222BEA00EA466B /* Sources */,
+				E3D6DDEA25222BEA00EA466B /* Frameworks */,
+				E3D6DDEB25222BEA00EA466B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D6DDEF25222BEA00EA466B /* PBXTargetDependency */,
+			);
+			name = "CMHeadphoneMotionManager-SamplerTests";
+			productName = "CMHeadphoneMotionManager-SamplerTests";
+			productReference = E3D6DDED25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3D6DDF725222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D6DE0725222BEA00EA466B /* Build configuration list for PBXNativeTarget "CMHeadphoneMotionManager-SamplerUITests" */;
+			buildPhases = (
+				E3D6DDF425222BEA00EA466B /* Sources */,
+				E3D6DDF525222BEA00EA466B /* Frameworks */,
+				E3D6DDF625222BEA00EA466B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D6DDFA25222BEA00EA466B /* PBXTargetDependency */,
+			);
+			name = "CMHeadphoneMotionManager-SamplerUITests";
+			productName = "CMHeadphoneMotionManager-SamplerUITests";
+			productReference = E3D6DDF825222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3D6DDCF25222BE900EA466B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E3D6DDD625222BE900EA466B = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					E3D6DDEC25222BEA00EA466B = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = E3D6DDD625222BE900EA466B;
+					};
+					E3D6DDF725222BEA00EA466B = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = E3D6DDD625222BE900EA466B;
+					};
+				};
+			};
+			buildConfigurationList = E3D6DDD225222BE900EA466B /* Build configuration list for PBXProject "CMHeadphoneMotionManager-Sampler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3D6DDCE25222BE900EA466B;
+			productRefGroup = E3D6DDD825222BE900EA466B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3D6DDD625222BE900EA466B /* CMHeadphoneMotionManager-Sampler */,
+				E3D6DDEC25222BEA00EA466B /* CMHeadphoneMotionManager-SamplerTests */,
+				E3D6DDF725222BEA00EA466B /* CMHeadphoneMotionManager-SamplerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3D6DDD525222BE900EA466B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D6DDE725222BEA00EA466B /* LaunchScreen.storyboard in Resources */,
+				E3D6DDE425222BEA00EA466B /* Assets.xcassets in Resources */,
+				E3D6DDE225222BE900EA466B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D6DDEB25222BEA00EA466B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D6DDF625222BEA00EA466B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3D6DDD325222BE900EA466B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3460F6D25280282009E5EA3 /* MotionWriter.swift in Sources */,
+				E3D6DDDF25222BE900EA466B /* ViewController.swift in Sources */,
+				E3D6DDDB25222BE900EA466B /* AppDelegate.swift in Sources */,
+				E3D6DDDD25222BE900EA466B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D6DDE925222BEA00EA466B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D6DDF225222BEA00EA466B /* CMHeadphoneMotionManager_SamplerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D6DDF425222BEA00EA466B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D6DDFD25222BEA00EA466B /* CMHeadphoneMotionManager_SamplerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3D6DDEF25222BEA00EA466B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3D6DDD625222BE900EA466B /* CMHeadphoneMotionManager-Sampler */;
+			targetProxy = E3D6DDEE25222BEA00EA466B /* PBXContainerItemProxy */;
+		};
+		E3D6DDFA25222BEA00EA466B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3D6DDD625222BE900EA466B /* CMHeadphoneMotionManager-Sampler */;
+			targetProxy = E3D6DDF925222BEA00EA466B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3D6DDE025222BE900EA466B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3D6DDE125222BE900EA466B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3D6DDE525222BEA00EA466B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3D6DDE625222BEA00EA466B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3D6DDFF25222BEA00EA466B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3D6DE0025222BEA00EA466B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3D6DE0225222BEA00EA466B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDB7A739SH;
+				INFOPLIST_FILE = "CMHeadphoneMotionManager-Sampler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CMHeadphoneMotionManager-Sampler-kosuke";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3D6DE0325222BEA00EA466B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDB7A739SH;
+				INFOPLIST_FILE = "CMHeadphoneMotionManager-Sampler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CMHeadphoneMotionManager-Sampler-kosuke";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3D6DE0525222BEA00EA466B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QJR7K89TS;
+				INFOPLIST_FILE = "CMHeadphoneMotionManager-SamplerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CMHeadphoneMotionManager-SamplerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMHeadphoneMotionManager-Sampler.app/CMHeadphoneMotionManager-Sampler";
+			};
+			name = Debug;
+		};
+		E3D6DE0625222BEA00EA466B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QJR7K89TS;
+				INFOPLIST_FILE = "CMHeadphoneMotionManager-SamplerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CMHeadphoneMotionManager-SamplerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMHeadphoneMotionManager-Sampler.app/CMHeadphoneMotionManager-Sampler";
+			};
+			name = Release;
+		};
+		E3D6DE0825222BEA00EA466B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QJR7K89TS;
+				INFOPLIST_FILE = "CMHeadphoneMotionManager-SamplerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CMHeadphoneMotionManager-SamplerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CMHeadphoneMotionManager-Sampler";
+			};
+			name = Debug;
+		};
+		E3D6DE0925222BEA00EA466B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QJR7K89TS;
+				INFOPLIST_FILE = "CMHeadphoneMotionManager-SamplerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CMHeadphoneMotionManager-SamplerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CMHeadphoneMotionManager-Sampler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3D6DDD225222BE900EA466B /* Build configuration list for PBXProject "CMHeadphoneMotionManager-Sampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D6DDFF25222BEA00EA466B /* Debug */,
+				E3D6DE0025222BEA00EA466B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D6DE0125222BEA00EA466B /* Build configuration list for PBXNativeTarget "CMHeadphoneMotionManager-Sampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D6DE0225222BEA00EA466B /* Debug */,
+				E3D6DE0325222BEA00EA466B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D6DE0425222BEA00EA466B /* Build configuration list for PBXNativeTarget "CMHeadphoneMotionManager-SamplerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D6DE0525222BEA00EA466B /* Debug */,
+				E3D6DE0625222BEA00EA466B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D6DE0725222BEA00EA466B /* Build configuration list for PBXNativeTarget "CMHeadphoneMotionManager-SamplerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D6DE0825222BEA00EA466B /* Debug */,
+				E3D6DE0925222BEA00EA466B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3D6DDCF25222BE900EA466B /* Project object */;
+}
