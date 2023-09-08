@@ -1,11 +1,12 @@
 //
 //  AppDelegate.swift
-//  predection_sandbox
+//  motion_detect_collect_data_app
 //
 //  Created by arai kousuke on 2023/09/08.
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // この３行で、キーボード以外の場所をタップするとキーボードを閉じたり、textfieldが自動的にキーボードより上のように位置するようにしている。
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
         return true
     }
 
