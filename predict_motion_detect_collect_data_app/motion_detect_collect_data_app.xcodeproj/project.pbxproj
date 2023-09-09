@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C1084C4FAF44B9DCDE81FD6F /* Pods_motion_detect_collect_data_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEC0740418076039B307FB7 /* Pods_motion_detect_collect_data_app.framework */; };
-		C25E1A962AAB0436008CEBFC /* HeadphoneMotionClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A952AAB0436008CEBFC /* HeadphoneMotionClassifier.swift */; };
+		C25E1A962AAB0436008CEBFC /* MotionClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E1A952AAB0436008CEBFC /* MotionClassifier.swift */; };
 		C25E1AA22AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AA12AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift */; };
 		C25E1AA82AABEE73008CEBFC /* circle_09090848.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AA72AABEE73008CEBFC /* circle_09090848.mlmodel */; };
 		C25E1AAB2AABFBF4008CEBFC /* circle_0909_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */; };
 		C25E1AAD2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
-		C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */; };
+		C2E671AD2AAAB40F00AAA7E9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* TopViewController.swift */; };
 		C2E671B02AAAB40F00AAA7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E671AE2AAAB40F00AAA7E9 /* Main.storyboard */; };
 		C2E671B22AAAB41100AAA7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E671B12AAAB41100AAA7E9 /* Assets.xcassets */; };
 		C2E671B52AAAB41100AAA7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E671B32AAAB41100AAA7E9 /* LaunchScreen.storyboard */; };
@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0970AE73110E333EA2A84028 /* Pods-motion_detect_collect_data_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motion_detect_collect_data_app.debug.xcconfig"; path = "Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app.debug.xcconfig"; sourceTree = "<group>"; };
-		C25E1A952AAB0436008CEBFC /* HeadphoneMotionClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneMotionClassifier.swift; sourceTree = "<group>"; };
+		C25E1A952AAB0436008CEBFC /* MotionClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionClassifier.swift; sourceTree = "<group>"; };
 		C25E1AA12AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisIsMLModelSandboxApp.swift; sourceTree = "<group>"; };
 		C25E1AA72AABEE73008CEBFC /* circle_09090848.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_09090848.mlmodel; sourceTree = "<group>"; };
 		C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0909_2.mlmodel; path = ../../../py/circle_0909_2.mlmodel; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2E671AC2AAAB40F00AAA7E9 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		C2E671AF2AAAB40F00AAA7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2E671B12AAAB41100AAA7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E671B42AAAB41100AAA7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				C25E1AA92AABEED5008CEBFC /* MLModels */,
 				C2E671DF2AAAEE9200AAA7E9 /* Utilities */,
 				C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */,
-				C2E671AC2AAAB40F00AAA7E9 /* ViewController.swift */,
+				C2E671AC2AAAB40F00AAA7E9 /* TopViewController.swift */,
 				C2E671AE2AAAB40F00AAA7E9 /* Main.storyboard */,
 				C2E671DD2AAAEB8B00AAA7E9 /* MotionWriter.swift */,
 				C2E671B12AAAB41100AAA7E9 /* Assets.xcassets */,
@@ -118,7 +118,7 @@
 			children = (
 				C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */,
 				C2E671E32AAAF36300AAA7E9 /* Haptics.swift */,
-				C25E1A952AAB0436008CEBFC /* HeadphoneMotionClassifier.swift */,
+				C25E1A952AAB0436008CEBFC /* MotionClassifier.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -249,8 +249,8 @@
 				C2E671E42AAAF36300AAA7E9 /* Haptics.swift in Sources */,
 				C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */,
 				C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */,
-				C2E671AD2AAAB40F00AAA7E9 /* ViewController.swift in Sources */,
-				C25E1A962AAB0436008CEBFC /* HeadphoneMotionClassifier.swift in Sources */,
+				C2E671AD2AAAB40F00AAA7E9 /* TopViewController.swift in Sources */,
+				C25E1A962AAB0436008CEBFC /* MotionClassifier.swift in Sources */,
 				C25E1AA22AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift in Sources */,
 				C25E1AAD2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel in Sources */,
 				C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */,
@@ -407,13 +407,14 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "予測";
+				INFOPLIST_KEY_CFBundleDisplayName = "検知テスト";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,13 +439,14 @@
 				DEVELOPMENT_TEAM = HDB7A739SH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "予測";
+				INFOPLIST_KEY_CFBundleDisplayName = "検知テスト";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
