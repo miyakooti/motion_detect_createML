@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         // Start accelerometer updates
         let queue = OperationQueue()
 
-        motionManager.startAccelerometerUpdates(to: queue) { (accelerometerData, error) in
-            if let data = accelerometerData {
+        motionManager.startGyroUpdates(to: queue) { (gyroData, error) in
+            if let data = gyroData {
                 // Process accelerometer data
                 self.classifier.process(deviceMotion: data)
             }

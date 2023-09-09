@@ -19,10 +19,10 @@ class MotionWriter {
             FileManager.default.createFile(atPath: filePath.path, contents: nil, attributes: nil)
             let file = try FileHandle(forWritingTo: filePath)
             var header = ""
-            header += "acceleration_x,"
-            header += "acceleration_y,"
-            header += "acceleration_z,"
-            header += "timestamp"
+            header += "timestamp,"
+            header += "gyro_x,"
+            header += "gyro_y,"
+            header += "gyro_z"
             header += "\n"
             file.write(header.data(using: .utf8)!)
             self.file = file
@@ -31,13 +31,13 @@ class MotionWriter {
         }
     }
 
-    func write(_ accelerationData: CMAccelerometerData) {
+    func write(_ gyroData: CMGyroData) {
         guard let file = self.file else { return }
         var text = ""
-        text += "\(accelerationData.acceleration.x),"
-        text += "\(accelerationData.acceleration.y),"
-        text += "\(accelerationData.acceleration.z),"
-        text += "\(accelerationData.timestamp)"
+        text += "\(gyroData.timestamp),"
+        text += "\(gyroData.rotationRate.x),"
+        text += "\(gyroData.rotationRate.y),"
+        text += "\(gyroData.rotationRate.z)"
         text += "\n"
         file.write(text.data(using: .utf8)!)
         sample += 1

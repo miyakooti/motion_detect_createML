@@ -22,21 +22,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         // Check if the device supports motion data
-        if !motionManager.isAccelerometerAvailable {
+        if !motionManager.isGyroAvailable {
             print("Accelerometer is not available on this device.")
         }
 
         // Configure the motion update interval
-        motionManager.accelerometerUpdateInterval = AppParameters.samplingRate
+        motionManager.gyroUpdateInterval = AppParameters.samplingRate
 
         // Start accelerometer updates
-        motionManager.startAccelerometerUpdates(to: .main) { (accelerometerData, error) in
-            if let data = accelerometerData {
+        motionManager.startGyroUpdates(to: .main) { (gyroData, error) in
+            if let data = gyroData {
                 // Process accelerometer data
                 if let writer = self.writer {
                     writer.write(data)
+                    
+                    print(data)
 
-                    print(accelerometerData)
                     
                     let duration = Int(self.durationText.text!)!
                     if duration > 0 {
