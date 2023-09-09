@@ -11,13 +11,13 @@ import Foundation
 import CoreML
 import CoreMotion
 
-protocol HeadphoneMotionClassifierDelegate: class {
+protocol MotionClassifierDelegate: class {
     func motionDidDetect(results: [(String, Double)])
 }
 
-class HeadphoneMotionClassifier {
+class MotionClassifier {
 
-    weak var delegate: HeadphoneMotionClassifierDelegate?
+    weak var delegate: MotionClassifierDelegate?
 
     static let configuration = MLModelConfiguration()
     let model = try! circle_0909_3_freq10(configuration: configuration)
@@ -48,7 +48,7 @@ class HeadphoneMotionClassifier {
 //    func process(deviceMotion: CMAccelerometerData) {
     func process(deviceMotion: CMGyroData) {
 
-        if predictionWindowIndex == HeadphoneMotionClassifier.predictionWindowSize {
+        if predictionWindowIndex == MotionClassifier.predictionWindowSize {
             return
         }
 
@@ -61,7 +61,7 @@ class HeadphoneMotionClassifier {
 
         predictionWindowIndex += 1
 
-        if predictionWindowIndex == HeadphoneMotionClassifier.predictionWindowSize {
+        if predictionWindowIndex == MotionClassifier.predictionWindowSize {
             DispatchQueue.global().async {
                 self.predict()
                 DispatchQueue.main.async {

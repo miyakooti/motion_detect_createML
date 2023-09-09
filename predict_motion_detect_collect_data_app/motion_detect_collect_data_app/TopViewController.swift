@@ -8,29 +8,28 @@
 import UIKit
 import CoreMotion
 
-class ViewController: UIViewController {
+final class TopViewController: UIViewController {
 
     let motionManager = CMMotionManager()
     var writer: MotionWriter?
     var begin: Date?
-    let classifier = HeadphoneMotionClassifier()
+    let classifier = MotionClassifier()
     @IBOutlet weak var dirTextField: UITextField!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
-        // Check if the device supports motion data
+        setUpSensor()
+    }
+    
+    private func setUpSensor() {
+        
         if !motionManager.isAccelerometerAvailable {
             print("Accelerometer is not available on this device.")
         }
-
-        // Configure the motion update interval
-        motionManager.accelerometerUpdateInterval = AppParameters.samplingRate
-
-        // Start accelerometer updates
+        
+        motionManager.gyroUpdateInterval = AppParameters.samplingRate
+        
         let queue = OperationQueue()
-
+        
         motionManager.startGyroUpdates(to: queue) { (gyroData, error) in
             if let data = gyroData {
                 // Process accelerometer data
@@ -42,29 +41,29 @@ class ViewController: UIViewController {
         }
         
         classifier.delegate = self
-
-//        if !hmm.isDeviceMotionAvailable {
-//            print("current device does not supports the headphone motion manager.")
-//            return
-//        }
-//
-//        hmm.startDeviceMotionUpdates(to: queue) { (motion, error) in
-//            if let motion = motion {
-////                print(motion)
-//                self.classifier.process(deviceMotion: motion)
-//                DispatchQueue.main.async {
-//                self.textView.text = """
-//                    加速度:
-//                        x: \(motion.userAcceleration.x)
-//                        y: \(motion.userAcceleration.y)
-//                        z: \(motion.userAcceleration.z)
-//                    """
-//                }
-//            }
-//            if let error = error {
-//                print(error)
-//            }
-//        }
+        
+        //        if !hmm.isDeviceMotionAvailable {
+        //            print("current device does not supports the headphone motion manager.")
+        //            return
+        //        }
+        //
+        //        hmm.startDeviceMotionUpdates(to: queue) { (motion, error) in
+        //            if let motion = motion {
+        ////                print(motion)
+        //                self.classifier.process(deviceMotion: motion)
+        //                DispatchQueue.main.async {
+        //                self.textView.text = """
+        //                    加速度:
+        //                        x: \(motion.userAcceleration.x)
+        //                        y: \(motion.userAcceleration.y)
+        //                        z: \(motion.userAcceleration.z)
+        //                    """
+        //                }
+        //            }
+        //            if let error = error {
+        //                print(error)
+        //            }
+        //        }
     }
 
     @IBAction func tapButton(_ sender: Any) {
@@ -80,9 +79,7 @@ class ViewController: UIViewController {
         
         guard let dirName = dirTextField.text else {return}
 
-//         Create a directory in the app's document directory
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-//        let dirName = "AccelerometerData"
         let dirURL = documentDirectory.appendingPathComponent(dirName, isDirectory: true)
 
         do {
@@ -116,13 +113,10 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: HeadphoneMotionClassifierDelegate {
+extension TopViewController: MotionClassifierDelegate {
     func motionDidDetect(results: [(String, Double)]) {
         print(results)
-//        if results[0].1 < 0.80 {
-//            print("pass")
-//            return
-//        }
+
         DispatchQueue.main.async {
             guard let resultText = results.first?.0 else { return }
             print("⭐️" + resultText)
