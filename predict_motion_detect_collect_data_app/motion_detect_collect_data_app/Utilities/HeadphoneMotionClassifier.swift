@@ -20,7 +20,7 @@ class HeadphoneMotionClassifier {
     weak var delegate: HeadphoneMotionClassifierDelegate?
 
     static let configuration = MLModelConfiguration()
-    let model = try! circle_09090848(configuration: configuration)
+    let model = try! circle_0909_3_freq10(configuration: configuration)
 
     static let predictionWindowSize = 100
 //    let acceleration_x = try! MLMultiArray(
@@ -77,7 +77,7 @@ class HeadphoneMotionClassifier {
 
     private func predict() {
 
-        let input = circle_09090848Input(
+        let input = circle_0909_3_freq10Input(
             gyro_x: gyro_x,
             gyro_y: gyro_x,
             gyro_z: gyro_x)

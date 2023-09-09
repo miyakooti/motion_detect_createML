@@ -124,12 +124,14 @@ extension ViewController: HeadphoneMotionClassifierDelegate {
 //            return
 //        }
         DispatchQueue.main.async {
-            if results[0].0 == "circle" {
-                print("サークル")
-            }
-            else  {
-                print("そうじゃない")
-            }
+            guard let resultText = results.first?.0 else { return }
+            print("⭐️" + resultText)
+//            if results[0].0 == "circle" {
+//                print("サークル")
+//            }
+//            else  {
+//                print("そうじゃない")
+//            }
 //            self.label.text = "\(results[0].0)\n\(results[0].1)"
 //            self.label2.text = results.description
         }
