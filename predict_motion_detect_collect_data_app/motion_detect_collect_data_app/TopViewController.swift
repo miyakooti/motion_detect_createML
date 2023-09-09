@@ -14,7 +14,9 @@ final class TopViewController: UIViewController {
     var writer: MotionWriter?
     var begin: Date?
     let classifier = MotionClassifier()
-    @IBOutlet weak var dirTextField: UITextField!
+        
+    @IBOutlet weak var resultText: UILabel!
+    
     
     override func viewDidLoad() {
         setUpSensor()
@@ -65,51 +67,8 @@ final class TopViewController: UIViewController {
         //            }
         //        }
     }
+    
 
-    @IBAction func tapButton(_ sender: Any) {
-        if self.writer == nil {
-            startRecording()
-        } else {
-            stopRecording()
-        }
-    }
-
-    func startRecording() {
-        HapticFeedbackManager.shared.play(.impact(.heavy))
-        
-        guard let dirName = dirTextField.text else {return}
-
-        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let dirURL = documentDirectory.appendingPathComponent(dirName, isDirectory: true)
-
-        do {
-            try FileManager.default.createDirectory(at: dirURL, withIntermediateDirectories: true, attributes: nil)
-        } catch let error {
-            print("Error creating directory: \(error)")
-            return
-        }
-
-        // Generate a unique filename based on date and time
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyyMMdd_HHmmss"
-        let filename = formatter.string(from: Date()) + ".csv"
-        let fileURL = dirURL.appendingPathComponent(filename)
-        
-        // Initialize the writer
-        writer = MotionWriter()
-        writer?.open(fileURL)
-        begin = Date()
-    }
-
-    func stopRecording() {
-        if let writer = self.writer {
-            writer.close()
-            print("記録完了")
-            HapticFeedbackManager.shared.play(.impact(.heavy))
-            HapticFeedbackManager.shared.play(.impact(.heavy))
-            self.writer = nil
-        }
-    }
 }
 
 
@@ -120,6 +79,7 @@ extension TopViewController: MotionClassifierDelegate {
         DispatchQueue.main.async {
             guard let resultText = results.first?.0 else { return }
             print("⭐️" + resultText)
+            self.resultText.text = resultText
 //            if results[0].0 == "circle" {
 //                print("サークル")
 //            }

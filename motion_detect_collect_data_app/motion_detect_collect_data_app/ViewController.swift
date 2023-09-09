@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     var begin: Date?
     @IBOutlet weak var dirTextField: UITextField!
     @IBOutlet weak var durationText: UITextField!
-    
+    @IBOutlet weak var resultLabelX: UILabel!
+    @IBOutlet weak var resultLabelY: UILabel!
+    @IBOutlet weak var resultLabelZ: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,9 @@ class ViewController: UIViewController {
                     writer.write(data)
                     
                     print(data)
+                    self.resultLabelX.text = "X：　" + String(data.rotationRate.x)
+                    self.resultLabelY.text = "Y：　" + String(data.rotationRate.y)
+                    self.resultLabelZ.text = "Z：　" + String(data.rotationRate.z)
 
                     
                     let duration = Int(self.durationText.text!)!
