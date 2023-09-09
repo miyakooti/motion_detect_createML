@@ -1,0 +1,17 @@
+[sframe]
+version=0
+num_segments=0
+num_columns=5
+nrows=7705
+[column_names]
+0000=session_id
+0001=gyro_z
+0002=label
+0003=gyro_x
+0004=gyro_y
+[column_files]
+0000=m_e96066838b719070.sidx:0
+0001=m_e96066838b719070.sidx:1
+0002=m_e96066838b719070.sidx:2
+0003=m_e96066838b719070.sidx:3
+0004=m_e96066838b719070.sidx:4

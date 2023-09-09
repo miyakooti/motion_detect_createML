@@ -15,28 +15,35 @@ class ViewController: UIViewController {
     var begin: Date?
     @IBOutlet weak var dirTextField: UITextField!
     @IBOutlet weak var durationText: UITextField!
-    
+    @IBOutlet weak var resultLabelX: UILabel!
+    @IBOutlet weak var resultLabelY: UILabel!
+    @IBOutlet weak var resultLabelZ: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         // Check if the device supports motion data
-        if !motionManager.isAccelerometerAvailable {
+        if !motionManager.isGyroAvailable {
             print("Accelerometer is not available on this device.")
         }
 
         // Configure the motion update interval
-        motionManager.accelerometerUpdateInterval = AppParameters.samplingRate
+        motionManager.gyroUpdateInterval = AppParameters.samplingRate
 
         // Start accelerometer updates
-        motionManager.startAccelerometerUpdates(to: .main) { (accelerometerData, error) in
-            if let data = accelerometerData {
+        motionManager.startGyroUpdates(to: .main) { (gyroData, error) in
+            if let data = gyroData {
                 // Process accelerometer data
                 if let writer = self.writer {
                     writer.write(data)
+                    
+                    print(data)
+                    self.resultLabelX.text = "X：　" + String(data.rotationRate.x)
+                    self.resultLabelY.text = "Y：　" + String(data.rotationRate.y)
+                    self.resultLabelZ.text = "Z：　" + String(data.rotationRate.z)
 
-                    print(accelerometerData)
                     
                     let duration = Int(self.durationText.text!)!
                     if duration > 0 {
