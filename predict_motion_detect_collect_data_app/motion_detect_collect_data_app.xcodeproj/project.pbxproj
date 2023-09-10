@@ -13,6 +13,7 @@
 		C25E1AA82AABEE73008CEBFC /* circle_09090848.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AA72AABEE73008CEBFC /* circle_09090848.mlmodel */; };
 		C25E1AAB2AABFBF4008CEBFC /* circle_0909_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */; };
 		C25E1AAD2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */; };
+		C27B1A132AADBE2500BE0F04 /* circle_0910_freq10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A122AADBE2500BE0F04 /* circle_0910_freq10.mlmodel */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
 		C2E671AD2AAAB40F00AAA7E9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* TopViewController.swift */; };
@@ -31,6 +32,7 @@
 		C25E1AA72AABEE73008CEBFC /* circle_09090848.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_09090848.mlmodel; sourceTree = "<group>"; };
 		C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0909_2.mlmodel; path = ../../../py/circle_0909_2.mlmodel; sourceTree = "<group>"; };
 		C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0909_3_freq10.mlmodel; path = ../../../py/circle_0909_3_freq10.mlmodel; sourceTree = "<group>"; };
+		C27B1A122AADBE2500BE0F04 /* circle_0910_freq10.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0910_freq10.mlmodel; path = ../../../py/circle_0910_freq10.mlmodel; sourceTree = "<group>"; };
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				C25E1AA72AABEE73008CEBFC /* circle_09090848.mlmodel */,
 				C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */,
 				C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */,
+				C27B1A122AADBE2500BE0F04 /* circle_0910_freq10.mlmodel */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */,
 				C25E1AA82AABEE73008CEBFC /* circle_09090848.mlmodel in Sources */,
 				C25E1AAB2AABFBF4008CEBFC /* circle_0909_2.mlmodel in Sources */,
+				C27B1A132AADBE2500BE0F04 /* circle_0910_freq10.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
