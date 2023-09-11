@@ -20,9 +20,9 @@ class MotionClassifier {
     weak var delegate: MotionClassifierDelegate?
 
     static let configuration = MLModelConfiguration()
-    let model = try! circle_0910_freq10(configuration: configuration)
+    let model = try! circle_0911_1(configuration: configuration)
 
-    static let predictionWindowSize = 100
+    static let predictionWindowSize = 20
 //    let acceleration_x = try! MLMultiArray(
 //        shape: [predictionWindowSize] as [NSNumber],
 //        dataType: MLMultiArrayDataType.double)
@@ -63,6 +63,7 @@ class MotionClassifier {
 
         if predictionWindowIndex == MotionClassifier.predictionWindowSize {
             DispatchQueue.global().async {
+              HapticFeedbackManager.shared.play(.impact(.heavy))
                 self.predict()
                 DispatchQueue.main.async {
                     self.predictionWindowIndex = 0
@@ -77,10 +78,14 @@ class MotionClassifier {
 
     private func predict() {
 
-        let input = circle_0910_freq10Input(
+        let input = circle_0911_1Input(
             gyro_x: gyro_x,
-            gyro_y: gyro_x,
-            gyro_z: gyro_x)
+            gyro_y: gyro_y,
+            gyro_z: gyro_z)
+      
+      print(gyro_x)
+      print(gyro_x)
+      print(gyro_x)
 
 
 //            stateIn: self.stateOut
