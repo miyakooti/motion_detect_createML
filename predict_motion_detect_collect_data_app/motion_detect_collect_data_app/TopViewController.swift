@@ -13,8 +13,11 @@ final class TopViewController: UIViewController {
     let motionManager = CMMotionManager()
     var writer: MotionWriter?
     var begin: Date?
-    let classifier = MotionClassifier()
-        
+  let classifier = MotionClassifier()
+//  let classifier2 = MotionClassifier()
+//  let classifier3 = MotionClassifier()
+//  let classifier4 = MotionClassifier()
+
     @IBOutlet weak var resultText: UILabel!
     
     
@@ -31,41 +34,37 @@ final class TopViewController: UIViewController {
         motionManager.gyroUpdateInterval = AppParameters.samplingRate
         
         let queue = OperationQueue()
+      
+       var count = 0
         
         motionManager.startGyroUpdates(to: queue) { (gyroData, error) in
             if let data = gyroData {
                 // Process accelerometer data
-                self.classifier.process(deviceMotion: data)
+              self.classifier.process(deviceMotion: data)
+              count += 1
+              
+              // 兄は遅れて家を出発
+//              if count >= 5 {
+//                self.classifier2.process(deviceMotion: data)
+//              }
+//
+//              if count >= 10 {
+//                self.classifier3.process(deviceMotion: data)
+//              }
+//
+//              if count >= 15 {
+//                self.classifier4.process(deviceMotion: data)
+//              }
             }
             if let error = error {
                 print("Error reading accelerometer data: \(error)")
             }
         }
-        
-        classifier.delegate = self
-        
-        //        if !hmm.isDeviceMotionAvailable {
-        //            print("current device does not supports the headphone motion manager.")
-        //            return
-        //        }
-        //
-        //        hmm.startDeviceMotionUpdates(to: queue) { (motion, error) in
-        //            if let motion = motion {
-        ////                print(motion)
-        //                self.classifier.process(deviceMotion: motion)
-        //                DispatchQueue.main.async {
-        //                self.textView.text = """
-        //                    加速度:
-        //                        x: \(motion.userAcceleration.x)
-        //                        y: \(motion.userAcceleration.y)
-        //                        z: \(motion.userAcceleration.z)
-        //                    """
-        //                }
-        //            }
-        //            if let error = error {
-        //                print(error)
-        //            }
-        //        }
+      classifier.delegate = self
+//      classifier2.delegate = self
+//      classifier3.delegate = self
+//      classifier4.delegate = self
+
     }
     
 
@@ -79,15 +78,13 @@ extension TopViewController: MotionClassifierDelegate {
         DispatchQueue.main.async {
             guard let resultText = results.first?.0 else { return }
             print("⭐️" + resultText)
-            self.resultText.text = resultText
 //            if results[0].0 == "circle" {
 //                print("サークル")
 //            }
 //            else  {
 //                print("そうじゃない")
 //            }
-//            self.label.text = "\(results[0].0)\n\(results[0].1)"
-//            self.label2.text = results.description
+            self.resultText.text = "\(results[0].0)\n\(results[0].1)"
         }
     }
 }

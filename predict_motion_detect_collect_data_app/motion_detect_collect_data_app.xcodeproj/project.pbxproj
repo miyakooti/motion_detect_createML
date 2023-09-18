@@ -14,11 +14,6 @@
 		C25E1AAB2AABFBF4008CEBFC /* circle_0909_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */; };
 		C25E1AAD2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */; };
 		C27B1A132AADBE2500BE0F04 /* circle_0910_freq10.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A122AADBE2500BE0F04 /* circle_0910_freq10.mlmodel */; };
-		C27B1A192AAF4ACE00BE0F04 /* circle_0911_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A142AAF4ACE00BE0F04 /* circle_0911_1.mlmodel */; };
-		C27B1A1A2AAF4ACE00BE0F04 /* circle_0911_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A152AAF4ACE00BE0F04 /* circle_0911_2.mlmodel */; };
-		C27B1A1B2AAF4ACE00BE0F04 /* circle_0910_others_mizumasi_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A162AAF4ACE00BE0F04 /* circle_0910_others_mizumasi_2.mlmodel */; };
-		C27B1A1C2AAF4ACE00BE0F04 /* circle_0910_others_mizumasi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A172AAF4ACE00BE0F04 /* circle_0910_others_mizumasi.mlmodel */; };
-		C27B1A1D2AAF4ACE00BE0F04 /* circle_0910_others.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C27B1A182AAF4ACE00BE0F04 /* circle_0910_others.mlmodel */; };
 		C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */; };
 		C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */; };
 		C2E671AD2AAAB40F00AAA7E9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671AC2AAAB40F00AAA7E9 /* TopViewController.swift */; };
@@ -28,6 +23,12 @@
 		C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671DD2AAAEB8B00AAA7E9 /* MotionWriter.swift */; };
 		C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */; };
 		C2E671E42AAAF36300AAA7E9 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E671E32AAAF36300AAA7E9 /* Haptics.swift */; };
+		DE1DD1482AAECA620022F66C /* circle_0911_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE1DD1472AAECA620022F66C /* circle_0911_1.mlmodel */; };
+		DE1DD14A2AAED71B0022F66C /* circle_0911_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE1DD1492AAED71B0022F66C /* circle_0911_2.mlmodel */; };
+		DE98C6DC2AB05F0A00A63746 /* circle_0912_mix_copy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE98C6DB2AB05F0A00A63746 /* circle_0912_mix_copy.mlmodel */; };
+		DEB921E92AAEA87500CF72E4 /* circle_0910_others.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DEB921E82AAEA87500CF72E4 /* circle_0910_others.mlmodel */; };
+		DEB921EB2AAEABF800CF72E4 /* circle_0910_others_mizumasi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DEB921EA2AAEABF800CF72E4 /* circle_0910_others_mizumasi.mlmodel */; };
+		DEB921ED2AAEAE3400CF72E4 /* circle_0910_others_mizumasi_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DEB921EC2AAEAE3400CF72E4 /* circle_0910_others_mizumasi_2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +39,6 @@
 		C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0909_2.mlmodel; path = ../../../py/circle_0909_2.mlmodel; sourceTree = "<group>"; };
 		C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0909_3_freq10.mlmodel; path = ../../../py/circle_0909_3_freq10.mlmodel; sourceTree = "<group>"; };
 		C27B1A122AADBE2500BE0F04 /* circle_0910_freq10.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0910_freq10.mlmodel; path = ../../../py/circle_0910_freq10.mlmodel; sourceTree = "<group>"; };
-		C27B1A142AAF4ACE00BE0F04 /* circle_0911_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_0911_1.mlmodel; sourceTree = "<group>"; };
-		C27B1A152AAF4ACE00BE0F04 /* circle_0911_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_0911_2.mlmodel; sourceTree = "<group>"; };
-		C27B1A162AAF4ACE00BE0F04 /* circle_0910_others_mizumasi_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_0910_others_mizumasi_2.mlmodel; sourceTree = "<group>"; };
-		C27B1A172AAF4ACE00BE0F04 /* circle_0910_others_mizumasi.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_0910_others_mizumasi.mlmodel; sourceTree = "<group>"; };
-		C27B1A182AAF4ACE00BE0F04 /* circle_0910_others.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_0910_others.mlmodel; sourceTree = "<group>"; };
 		C2E671A52AAAB40F00AAA7E9 /* motion_detect_collect_data_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motion_detect_collect_data_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E671A82AAAB40F00AAA7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E671AA2AAAB40F00AAA7E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +50,12 @@
 		C2E671DD2AAAEB8B00AAA7E9 /* MotionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionWriter.swift; sourceTree = "<group>"; };
 		C2E671E12AAAEEAD00AAA7E9 /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
 		C2E671E32AAAF36300AAA7E9 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		DE1DD1472AAECA620022F66C /* circle_0911_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0911_1.mlmodel; path = ../../../py/circle_0911_1.mlmodel; sourceTree = "<group>"; };
+		DE1DD1492AAED71B0022F66C /* circle_0911_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0911_2.mlmodel; path = ../../../py/circle_0911_2.mlmodel; sourceTree = "<group>"; };
+		DE98C6DB2AB05F0A00A63746 /* circle_0912_mix_copy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0912_mix_copy.mlmodel; path = ../../../py/circle_0912_mix_copy.mlmodel; sourceTree = "<group>"; };
+		DEB921E82AAEA87500CF72E4 /* circle_0910_others.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = circle_0910_others.mlmodel; sourceTree = "<group>"; };
+		DEB921EA2AAEABF800CF72E4 /* circle_0910_others_mizumasi.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0910_others_mizumasi.mlmodel; path = ../../../py/circle_0910_others_mizumasi.mlmodel; sourceTree = "<group>"; };
+		DEB921EC2AAEAE3400CF72E4 /* circle_0910_others_mizumasi_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = circle_0910_others_mizumasi_2.mlmodel; path = ../../../py/circle_0910_others_mizumasi_2.mlmodel; sourceTree = "<group>"; };
 		EA52E6E9121EBA8B430C529E /* Pods-motion_detect_collect_data_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-motion_detect_collect_data_app.release.xcconfig"; path = "Target Support Files/Pods-motion_detect_collect_data_app/Pods-motion_detect_collect_data_app.release.xcconfig"; sourceTree = "<group>"; };
 		EFEC0740418076039B307FB7 /* Pods_motion_detect_collect_data_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_motion_detect_collect_data_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,11 +88,12 @@
 				C25E1AAA2AABFBF3008CEBFC /* circle_0909_2.mlmodel */,
 				C25E1AAC2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel */,
 				C27B1A122AADBE2500BE0F04 /* circle_0910_freq10.mlmodel */,
-				C27B1A162AAF4ACE00BE0F04 /* circle_0910_others_mizumasi_2.mlmodel */,
-				C27B1A172AAF4ACE00BE0F04 /* circle_0910_others_mizumasi.mlmodel */,
-				C27B1A182AAF4ACE00BE0F04 /* circle_0910_others.mlmodel */,
-				C27B1A142AAF4ACE00BE0F04 /* circle_0911_1.mlmodel */,
-				C27B1A152AAF4ACE00BE0F04 /* circle_0911_2.mlmodel */,
+				DEB921E82AAEA87500CF72E4 /* circle_0910_others.mlmodel */,
+				DEB921EC2AAEAE3400CF72E4 /* circle_0910_others_mizumasi_2.mlmodel */,
+				DEB921EA2AAEABF800CF72E4 /* circle_0910_others_mizumasi.mlmodel */,
+				DE1DD1472AAECA620022F66C /* circle_0911_1.mlmodel */,
+				DE1DD1492AAED71B0022F66C /* circle_0911_2.mlmodel */,
+				DE98C6DB2AB05F0A00A63746 /* circle_0912_mix_copy.mlmodel */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -264,23 +267,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB921EB2AAEABF800CF72E4 /* circle_0910_others_mizumasi.mlmodel in Sources */,
+				DE1DD14A2AAED71B0022F66C /* circle_0911_2.mlmodel in Sources */,
 				C2E671E42AAAF36300AAA7E9 /* Haptics.swift in Sources */,
 				C2E671E22AAAEEAD00AAA7E9 /* AppParameters.swift in Sources */,
 				C2E671DE2AAAEB8B00AAA7E9 /* MotionWriter.swift in Sources */,
 				C2E671AD2AAAB40F00AAA7E9 /* TopViewController.swift in Sources */,
 				C25E1A962AAB0436008CEBFC /* MotionClassifier.swift in Sources */,
+				DEB921E92AAEA87500CF72E4 /* circle_0910_others.mlmodel in Sources */,
 				C25E1AA22AAB6003008CEBFC /* ThisIsMLModelSandboxApp.swift in Sources */,
-				C27B1A1D2AAF4ACE00BE0F04 /* circle_0910_others.mlmodel in Sources */,
 				C25E1AAD2AABFE7B008CEBFC /* circle_0909_3_freq10.mlmodel in Sources */,
+				DE1DD1482AAECA620022F66C /* circle_0911_1.mlmodel in Sources */,
 				C2E671A92AAAB40F00AAA7E9 /* AppDelegate.swift in Sources */,
-				C27B1A1C2AAF4ACE00BE0F04 /* circle_0910_others_mizumasi.mlmodel in Sources */,
+				DE98C6DC2AB05F0A00A63746 /* circle_0912_mix_copy.mlmodel in Sources */,
 				C2E671AB2AAAB40F00AAA7E9 /* SceneDelegate.swift in Sources */,
 				C25E1AA82AABEE73008CEBFC /* circle_09090848.mlmodel in Sources */,
-				C27B1A1A2AAF4ACE00BE0F04 /* circle_0911_2.mlmodel in Sources */,
+				DEB921ED2AAEAE3400CF72E4 /* circle_0910_others_mizumasi_2.mlmodel in Sources */,
 				C25E1AAB2AABFBF4008CEBFC /* circle_0909_2.mlmodel in Sources */,
-				C27B1A1B2AAF4ACE00BE0F04 /* circle_0910_others_mizumasi_2.mlmodel in Sources */,
 				C27B1A132AADBE2500BE0F04 /* circle_0910_freq10.mlmodel in Sources */,
-				C27B1A192AAF4ACE00BE0F04 /* circle_0911_1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDB7A739SH;
+				DEVELOPMENT_TEAM = 6975BUCR47;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "検知テスト";
@@ -444,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hoge.com.google.predict-motion-detect-collect-data-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "hogeho.com.google.predict-motion-detect-collect-data-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -460,7 +464,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDB7A739SH;
+				DEVELOPMENT_TEAM = 6975BUCR47;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = motion_detect_collect_data_app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "検知テスト";
@@ -476,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hoge.com.google.predict-motion-detect-collect-data-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "hogeho.com.google.predict-motion-detect-collect-data-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

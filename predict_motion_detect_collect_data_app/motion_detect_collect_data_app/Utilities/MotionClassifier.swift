@@ -20,7 +20,7 @@ class MotionClassifier {
     weak var delegate: MotionClassifierDelegate?
 
     static let configuration = MLModelConfiguration()
-    let model = try! circle_0911_1(configuration: configuration)
+    let model = try! circle_0912_mix_copy(configuration: configuration)
 
     static let predictionWindowSize = 20
 //    let acceleration_x = try! MLMultiArray(
@@ -78,13 +78,11 @@ class MotionClassifier {
 
     private func predict() {
 
-        let input = circle_0911_1Input(
+        let input = circle_0912_mix_copyInput(
             gyro_x: gyro_x,
             gyro_y: gyro_y,
             gyro_z: gyro_z)
       
-      print(gyro_x)
-      print(gyro_x)
       print(gyro_x)
 
 

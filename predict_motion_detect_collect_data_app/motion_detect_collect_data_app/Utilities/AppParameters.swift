@@ -8,5 +8,5 @@
 import Foundation
 
 struct AppParameters {
-    static let samplingRate = 0.02
+    static let samplingRate = 0.1
 }
